@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="专业落地页制作服务，提供斗篷AB页、AB轮询、COD页面制作、独立站搭建、谷歌落地页、Facebook落地页等一站式解决方案。当天交付，价格实惠，质量保证。">
+    <meta name="keywords" content="落地页制作,斗篷,AB页,AB轮询,COD页面制作,独立站搭建,落地页搭建,谷歌落地页,Facebook落地页,TikTok落地页,营销页面制作">
+    <meta name="author" content="落地页制作工作室">
+    <meta property="og:title" content="专业落地页制作服务 - 斗篷AB页、独立站搭建一站式解决方案">
+    <meta property="og:description" content="提供落地页制作、斗篷AB页、AB轮询、COD页面、独立站搭建等服务。当天交付，价格实惠，质量保证。">
+    <meta property="og:type" content="website">
+    <title>落地页制作服务_斗篷AB页_COD页面制作_独立站搭建_谷歌Facebook落地页-专业工作室</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #003d5c;
+            --deep-blue: #001f3f;
+            --ocean-blue: #005a82;
+            --light-blue: #0074a8;
+            --accent-yellow: #ffd700;
+            --bright-yellow: #ffed4e;
+            --dark-yellow: #e6c200;
+            --text-light: #ffffff;
+            --text-dark: #001f3f;
+            --bg-light: #f5f9fc;
+            --bg-dark: #001a2e;
+            --card-light: #ffffff;
+            --card-dark: #002a45;
+            --shadow: 0 10px 40px rgba(0, 61, 92, 0.15);
+            --shadow-hover: 0 20px 60px rgba(0, 61, 92, 0.25);
+            --yellow-glow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.8;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        body.dark {
+            background: var(--bg-dark);
+            color: var(--text-light);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 31, 63, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(255, 215, 0, 0.1);
+            transition: all 0.3s ease;
+            border-bottom: 2px solid var(--accent-yellow);
+        }
+
+        body.dark nav {
+            background: rgba(0, 26, 46, 0.98);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        body.dark .nav-menu a {
+            color: var(--text-light);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: var(--accent-yellow);
+            transition: width 0.3s ease;
+        }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after {
+            width: 100%;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent-yellow);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--ocean-blue) 50%, var(--light-blue) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:
+                url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="2" fill="rgba(255,215,0,0.3)"/><circle cx="90" cy="30" r="1.5" fill="rgba(255,215,0,0.2)"/><circle cx="50" cy="80" r="1" fill="rgba(255,215,0,0.25)"/></svg>'),
+                radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 237, 78, 0.08) 0%, transparent 50%);
+            background-size: 100px 100px, 800px 800px, 600px 600px;
+            background-position: 0 0, 0 0, 100% 100%;
+            animation: float 30s linear infinite, pulse 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+            animation: rotate 40s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            padding: 3rem 2rem;
+            animation: fadeInUp 1s ease;
+            max-width: 1000px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+            color: var(--text-light);
+        }
+
+        .hero h1 .highlight {
+            color: var(--accent-yellow);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .subtitle {
+            font-size: clamp(1.3rem, 3vw, 2.2rem);
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: var(--bright-yellow);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-description {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            max-width: 850px;
+            margin: 0 auto 3rem;
+            line-height: 1.9;
+            opacity: 0.95;
+        }
+
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .hero-feature-tag {
+            background: rgba(255, 215, 0, 0.15);
+            border: 2px solid var(--accent-yellow);
+            color: var(--bright-yellow);
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .hero-feature-tag:hover {
+            background: var(--accent-yellow);
+            color: var(--deep-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 215, 0, 0.4);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 3.5rem;
+            background: var(--accent-yellow);
+            color: var(--deep-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+            border: 3px solid var(--accent-yellow);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
+            background: var(--bright-yellow);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 3rem;
+            color: var(--deep-blue);
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-yellow), var(--bright-yellow));
+            border-radius: 2px;
+        }
+
+        body.dark .section-title {
+            color: var(--text-light);
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--card-light);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            animation: fadeIn 0.6s ease;
+            border: 2px solid transparent;
+        }
+
+        body.dark .card {
+            background: var(--card-dark);
+            border-color: rgba(255, 215, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--accent-yellow);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--ocean-blue);
+            font-weight: 700;
+        }
+
+        body.dark .card h3 {
+            color: var(--accent-yellow);
+        }
+
+        .card p, .card ul {
+            color: var(--text-dark);
+            opacity: 0.8;
+        }
+
+        body.dark .card p,
+        body.dark .card ul {
+            color: var(--text-light);
+        }
+
+        .card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .card ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .card ul li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--accent-yellow);
+        }
+
+        /* Language Grid */
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .language-item {
+            background: linear-gradient(135deg, var(--ocean-blue), var(--light-blue));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .language-item:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--accent-yellow);
+            background: linear-gradient(135deg, var(--light-blue), var(--ocean-blue));
+        }
+
+        /* Platform Icons */
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .platform-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--card-light);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        body.dark .platform-item {
+            background: var(--card-dark);
+        }
+
+        .platform-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .platform-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .platform-name {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            background: linear-gradient(135deg, var(--deep-blue), var(--ocean-blue));
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: var(--shadow-hover);
+            border: 3px solid var(--accent-yellow);
+        }
+
+        .contact-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            color: var(--bright-yellow);
+        }
+
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-method {
+            background: rgba(255, 215, 0, 0.15);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            min-width: 250px;
+            border: 2px solid var(--accent-yellow);
+        }
+
+        .contact-method:hover {
+            background: var(--accent-yellow);
+            color: var(--deep-blue);
+            transform: scale(1.05);
+        }
+
+        .contact-method h4 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-yellow);
+        }
+
+        .contact-method:hover h4 {
+            color: var(--deep-blue);
+        }
+
+        .contact-method p {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .contact-method:hover p {
+            color: var(--deep-blue);
+        }
+
+        /* Social Proof Section */
+        .social-proof-section {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--primary-blue) 100%);
+            padding: 5rem 2rem;
+            margin-top: 5rem;
+        }
+
+        .social-proof-section .section-title {
+            color: var(--bright-yellow);
+        }
+
+        .social-proof-section .section-title::after {
+            background: linear-gradient(90deg, var(--bright-yellow), var(--accent-yellow));
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin: 3rem auto;
+            max-width: 1200px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-yellow);
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            color: var(--accent-yellow);
+            margin-bottom: 0.5rem;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            opacity: 0.9;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--accent-yellow);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-stars {
+            color: var(--accent-yellow);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-text {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            color: var(--bright-yellow);
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, var(--deep-blue), var(--primary-blue));
+            color: white;
+            border-top: 3px solid var(--accent-yellow);
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        .footer-keywords {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            color: var(--bright-yellow);
+        }
+
+        /* Features List */
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: var(--card-light);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        body.dark .feature-item {
+            background: var(--card-dark);
+        }
+
+        .feature-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .feature-content h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--ocean-blue);
+        }
+
+        body.dark .feature-content h4 {
+            color: var(--accent-yellow);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-menu {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .contact-methods {
+                gap: 1.5rem;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">落地页工作室</div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#services">服务类型</a></li>
+                <li><a href="#support">打粉支持</a></li>
+                <li><a href="#languages">多语言</a></li>
+                <li><a href="#custom">定制服务</a></li>
+                <li><a href="#tech">技术支持</a></li>
+                <li><a href="#platforms">平台覆盖</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><span class="highlight">专业落地页制作</span> 一站式解决方案</h1>
+            <div class="subtitle">斗篷AB页 · COD页面 · 独立站搭建 · 当天交付</div>
+
+            <div class="hero-features">
+                <div class="hero-feature-tag">🔥 斗篷AB轮询</div>
+                <div class="hero-feature-tag">⚡ 当天交付</div>
+                <div class="hero-feature-tag">💎 质量保证</div>
+                <div class="hero-feature-tag">💰 价格实惠</div>
+            </div>
+
+            <p class="hero-description">
+                打造您的私域流量,成就无限可能!专注落地页制作、斗篷AB页、COD页面制作、独立站搭建,支持谷歌落地页、Facebook落地页、TikTok落地页等全平台推广。我们的落地页制作服务将为您提供强有力的支持,助力您打造卓越的线上形象,吸引客户眼球,提升转化率!
+            </p>
+            <a href="#contact" class="cta-button">立即咨询 - 当天交付</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in">
+        <h2 class="section-title">落地页制作服务类型</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.8;">
+            无论您所在的行业,我们都能提供专业的落地页搭建解决方案
+        </p>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>营销落地页制作</h3>
+                <p>专业打造高转化率的营销落地页,支持谷歌落地页、Facebook落地页等多平台,精准捕获目标客户,提升品牌影响力。</p>
+            </div>
+            <div class="card">
+                <h3>独立站搭建</h3>
+                <p>从零开始构建您的独立站,完全自主掌控品牌形象与用户体验。专业独立站制作服务,助力品牌出海。</p>
+            </div>
+            <div class="card">
+                <h3>COD页面制作</h3>
+                <p>货到付款COD页专业定制,优化用户购买流程,最大化订单转化率。适配全球主流支付方式。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="fade-in">
+        <h2 class="section-title">打粉落地页支持</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>金融投资类</h3>
+                <ul>
+                    <li>股票 GP</li>
+                    <li>投资币粉</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>生活服务类</h3>
+                <ul>
+                    <li>兼职 JZ</li>
+                    <li>相亲交友</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>医疗健康类</h3>
+                <ul>
+                    <li>男科 NK</li>
+                    <li>S粉</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>文化商品类</h3>
+                <ul>
+                    <li>复刻 F粉</li>
+                    <li>国学粉</li>
+                    <li>翡翠粉</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="fade-in">
+        <h2 class="section-title">多语言支持</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.8;">
+            我们的落地页支持多种语言,让您的信息无国界传播
+        </p>
+        <div class="language-grid">
+            <div class="language-item">中文</div>
+            <div class="language-item">English 英文</div>
+            <div class="language-item">繁體中文</div>
+            <div class="language-item">日本語 日文</div>
+            <div class="language-item">한국어 韩文</div>
+            <div class="language-item">Deutsch 德语</div>
+            <div class="language-item">Español 西班牙语</div>
+            <div class="language-item">العربية 阿拉伯语</div>
+            <div class="language-item">Italiano 意大利语</div>
+            <div class="language-item">Français 法语</div>
+            <div class="language-item">Nederlands 荷兰语</div>
+            <div class="language-item">更多语言...</div>
+        </div>
+        <p style="text-align: center; font-size: 1.1rem; margin-top: 2rem; opacity: 0.8;">
+            涵盖全球市场!
+        </p>
+    </section>
+
+    <!-- Custom Service Section -->
+    <section id="custom" class="fade-in">
+        <h2 class="section-title">定制化服务,快速交付</h2>
+        <div class="features-list">
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <div class="feature-content">
+                    <h4>量身定制</h4>
+                    <p>我们理解每个品牌的独特性,提供根据需求量身定制的落地页设计,确保您的品牌故事得到完美呈现!</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-content">
+                    <h4>当天交付</h4>
+                    <p>快速响应您的需求,不让机遇稍纵即逝!高效的工作流程确保您能迅速上线。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Support Section -->
+    <section id="tech" class="fade-in">
+        <h2 class="section-title">斗篷AB页与技术支持</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.8;">
+            我们不仅提供落地页设计服务,还为您提供全面的斗篷AB页技术支持
+        </p>
+        <div class="features-list">
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-content">
+                    <h4>斗篷AB页面</h4>
+                    <p>专业斗篷技术,AB页通过审查,保护您的广告账号,提升品牌信任度!</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔗</div>
+                <div class="feature-content">
+                    <h4>AB轮询与短链分流</h4>
+                    <p>先进的AB轮询技术,短链分流优化流量分配,智能提高转化率!</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👨‍💻</div>
+                <div class="feature-content">
+                    <h4>一对一专业技术支持</h4>
+                    <p>7×24小时技术支持,确保您在使用落地页过程中无后顾之忧!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section id="platforms" class="fade-in">
+        <h2 class="section-title">覆盖各大热门推广平台</h2>
+        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.8;">
+            我们的落地页制作支持在多种社交平台上推广,斗篷AB页适配所有主流平台
+        </p>
+        <div class="platform-grid">
+            <div class="platform-item">
+                <div class="platform-icon">📘</div>
+                <div class="platform-name">Facebook落地页</div>
+                <p style="margin-top: 0.5rem; opacity: 0.8;">Facebook落地页制作,连接全球用户,斗篷AB页通过Facebook审查!</p>
+            </div>
+            <div class="platform-item">
+                <div class="platform-icon">🔍</div>
+                <div class="platform-name">谷歌落地页</div>
+                <p style="margin-top: 0.5rem; opacity: 0.8;">谷歌落地页搭建,SEO优化,通过Google广告审核!</p>
+            </div>
+            <div class="platform-item">
+                <div class="platform-icon">🎵</div>
+                <div class="platform-name">TikTok落地页</div>
+                <p style="margin-top: 0.5rem; opacity: 0.8;">TikTok落地页制作,引领潮流,捕获年轻用户!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <h2 class="section-title">客户选择我们的理由</h2>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">落地页制作案例</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">客户满意度</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">24h</div>
+                <div class="stat-label">快速交付</div>
+            </div>
+        </div>
+
+        <h3 style="text-align: center; font-size: 2rem; color: var(--bright-yellow); margin: 4rem 0 2rem;">真实客户评价</h3>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"落地页质量非常高,斗篷AB页完美通过Facebook审查,转化率提升了3倍!当天就交付了,服务太赞了!"</p>
+                <p class="testimonial-author">- 跨境电商 王先生</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"价格非常实惠,比其他工作室便宜一半,但质量一点不差。COD页面制作专业,订单转化率明显提高。"</p>
+                <p class="testimonial-author">- 独立站卖家 李女士</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"售后服务一流!遇到问题随时响应,AB轮询技术很稳定。谷歌落地页搭建后广告效果显著提升!"</p>
+                <p class="testimonial-author">- 营销推广 张总</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in">
+        <div class="contact-container">
+            <h2 class="contact-title">联系我们,开启成功之旅!</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                立即获取更多落地页制作信息或下单,请通过以下方式与我们联系:
+            </p>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <h4>Telegram</h4>
+                    <p>@snvtr2</p>
+                </div>
+                <div class="contact-method">
+                    <h4>微信</h4>
+                    <p>tangguo97a</p>
+                </div>
+            </div>
+            <p style="font-size: 1.3rem; margin-top: 3rem; font-weight: 600;">
+                不让市场机遇溜走,成就您的品牌未来!<br>
+                专业落地页制作、斗篷AB页、独立站搭建,让我们一同创造,掌控属于您的私域流量!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 落地页制作工作室 - 专业落地页制作、斗篷AB页、COD页面制作、独立站搭建服务</p>
+        <p class="footer-keywords">
+            落地页制作 | 斗篷 | AB页 | AB轮询 | COD页面制作 | 独立站搭建 | 落地页搭建 | 谷歌落地页 | Facebook落地页 | TikTok落地页 | 营销页面制作
+        </p>
+    </footer>
+
+    <script>
+        // Dark mode support
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                document.body.classList.remove('dark');
+            }
+        });
+
+        // Active navigation
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
